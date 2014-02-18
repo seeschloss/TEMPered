@@ -16,3 +16,6 @@ target_link_libraries(read-all ${TEMPERED_LIB} ${HIDAPI_LINK_LIBS})
 
 add_executable(read-repeat read-repeat.c ${HIDAPI_STATIC_OBJECT})
 target_link_libraries(read-repeat ${TEMPERED_LIB} ${HIDAPI_LINK_LIBS})
+
+add_executable(read-temp read-temp.c ${HIDAPI_STATIC_OBJECT})
+target_link_libraries(read-temp ${TEMPERED_LIB} ${HIDAPI_LINK_LIBS})
